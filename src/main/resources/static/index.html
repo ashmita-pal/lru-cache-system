@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LRU Cache System</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>LRU Cache Managemnet System</h1>
+
+        <!-- Store Entry -->
+        <div class="box">
+            <h2>Store Cache Entry</h2>
+            <input type="text" id="key" placeholder="Key">
+            <input type="text" id="value" placeholder="Value">
+            <input type="number" id="ttl" placeholder="TTL">
+            <button onclick="storeValue()">Store</button>
+        </div>
+
+        <!-- Get Entry -->
+        <div class="box">
+            <h2>Get Value</h2>
+            <input type="text" id="getKey" placeholder="Enter key">
+            <button onclick="getValue()">Get</button>
+            <p id="result"></p>
+        </div>
+
+        <!-- Delete Entry -->
+        <div class="box">
+            <h2>Delete Entry</h2>
+            <input type="text" id="deleteKey" placeholder="Enter key">
+            <button onclick="deleteValue()">Delete</button>
+        </div>
+
+        <!-- Cache Entries -->
+        <div class="box">
+            <h2>All Cache Entries</h2>
+            <button onclick="loadCache()">Refresh</button>
+            <ul id="cacheList"></ul>
+        </div>
+
+        <!-- Cache Stats -->
+        <div class="box">
+            <h2>Cache Statistics</h2>
+            <button onclick="loadStats()">Load Stats</button>
+            <p id="stats"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

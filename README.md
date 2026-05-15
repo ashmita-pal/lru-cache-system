@@ -11,7 +11,7 @@ A full-stack in-memory LRU Cache System built using Java and Spring Boot with O(
 - TTL-based cache expiration
 - REST APIs using Spring Boot
 - Cache statistics tracking
-- Frontend interface for cache management
+- Web-based interface for cache operations
 
 ---
 
@@ -49,18 +49,39 @@ GET /cache/all
 
 ## How to Run
 
-1. Clone the repository
-2. Open project in VS Code
-3. Run Spring Boot application
-4. Open browser and visit:
+### 1. Clone the repository
 
+```bash
+git clone https://github.com/ashmita-pal/lru-cache-system.git
+```
+
+### 2. Open the project in VS Code
+
+Navigate to the project folder.
+
+### 3. Run the Spring Boot application
+
+```bash
+.\mvnw spring-boot:run
+```
+
+### 4. Open in browser
+
+Frontend:
 http://localhost:8081
 
 ---
 
 ## Future Improvements
 
-- Redis integration
-- Thread-safe cache
-- Persistent storage
-- User authentication
+- Redis Integration  
+  Replace the custom in-memory cache with Redis to support distributed caching and improve scalability for real-world applications.
+
+- Thread-Safe Cache  
+  Implement synchronization or concurrent data structures to safely handle multiple simultaneous user requests.
+
+- Persistent Storage  
+  Store cache data in a database or file system so that cache entries remain available even after server restarts.
+
+- User Authentication  
+  Add login and authorization features to restrict cache operations to authenticated users only.
